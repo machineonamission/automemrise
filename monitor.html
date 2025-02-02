@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitor AutoMemrise</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="fontawesome.min.js"></script>
+    <script src="monitor.js"></script>
+    <style>
+        .pfix {
+            margin-bottom:0;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <h1><img src="icon32.png" alt="" style="height:3rem;"/> Monitor AutoMemrise</h1>
+    <div class="main">
+
+    </div>
+    <div class="progress" style="height:20px">
+        <div class="pgr progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0"
+             aria-valuemin="0" aria-valuemax="100" style="width: 0"></div>
+    </div>
+    <br>
+    <div id="alltime"></div>
+    <div id="month"></div>
+    <div id="week"></div>
+</div>
+</body>
+</html>

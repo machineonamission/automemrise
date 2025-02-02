@@ -1,0 +1,37 @@
+{
+  "name": "AutoMemrise",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Automatically do Memrise",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": {
+      "32": "icon32.png",
+      "128": "icon128.png",
+      "1000": "icon1000.png"
+    },
+    "default_title": "AutoMemrise",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "32": "icon32.png",
+    "128": "icon128.png",
+    "1000": "icon1000.png"
+  },
+  "permissions": [
+    "https://www.memrise.com/course/*",
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.memrise.com/course/*"],
+      "js": ["jquery-3.4.1.min.js","main.js"]
+    }
+  ]
+}
